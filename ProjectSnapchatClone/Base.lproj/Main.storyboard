@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snapchatIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qxG-dv-Jdz">
-                                <rect key="frame" x="68.666666666666671" y="296" width="255.66666666666657" height="128"/>
+                                <rect key="frame" x="68.666666666666671" y="296" width="255.66666666666663" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="Eqe-gx-nLd"/>
                                 </constraints>
@@ -368,7 +368,7 @@
                     <tabBarItem key="tabBarItem" title="Feed" image="homekit" catalog="system" id="P0x-UF-1bs"/>
                     <connections>
                         <outlet property="tableView" destination="4d2-9p-ADd" id="cg5-TC-yYD"/>
-                        <segue destination="nfX-MB-3B2" kind="show" identifier="toDetailsVC" id="dS8-Cb-hvL"/>
+                        <segue destination="nfX-MB-3B2" kind="show" identifier="toSnapVC" id="dS8-Cb-hvL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0x-3V-j8b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

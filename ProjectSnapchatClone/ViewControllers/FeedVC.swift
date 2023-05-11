@@ -16,6 +16,8 @@ class FeedVC: UIViewController {
     let fireStoreDatabase = Firestore.firestore()
     
     var snapArray = [SnapModel]()
+    var choosenSnap : SnapModel?
+    var timeLeft : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,11 +69,25 @@ extension FeedVC:UITableViewDelegate , UITableViewDataSource{
         let user = snapArray[indexPath.row]
         cell.userNameLabel.text = user.userName
         cell.feedImageView.sd_setImage(with: URL(string: user.imageArray[0]))
-  
-        
-        
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedSnap = snapArray[indexPath.row]
+        self.choosenSnap = selectedSnap
+        
+        performSegue(withIdentifier: "toSnapVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSnapVC"{
+            let destinationVC = segue.destination as! SnapVC
+            destinationVC.selectedSnap = self.choosenSnap
+            destinationVC.selectedTime = self.timeLeft
+        }
+    }
+    
+    
 }
 
 //MARK: Firebase veri ceme
@@ -98,6 +114,7 @@ extension FeedVC{
                                         }
                                         
                                         //TIMELEFT -> SnapVC
+                                        self.timeLeft = 24 - difference
                                     }
                                     
                                     let snap = SnapModel(userName: userName, imageArray: imageUrlArray, date: date.dateValue())

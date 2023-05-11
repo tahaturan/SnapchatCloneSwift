@@ -10,10 +10,12 @@ import UIKit
 class SnapVC: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
+    var selectedSnap : SnapModel?
+    var selectedTime : Int?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        timeLabel.text = "Time Left: \(selectedTime ?? 0)"
     }
     
 
