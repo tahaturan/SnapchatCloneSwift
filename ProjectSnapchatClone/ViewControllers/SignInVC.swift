@@ -15,6 +15,9 @@ class SignInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        logInButton.layer.cornerRadius = 20
+        signUpButton.layer.cornerRadius = 20
+      
   
     }
 
