@@ -32,6 +32,7 @@
 		5F8A78C42A0D304700EF44E3 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A78C32A0D304700EF44E3 /* FeedCell.swift */; };
 		5F8A78C62A0D329900EF44E3 /* SnapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A78C52A0D329900EF44E3 /* SnapModel.swift */; };
 		5F8A78C92A0D365000EF44E3 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5F8A78C82A0D365000EF44E3 /* SDWebImage */; };
+		5F8A78D22A0D405700EF44E3 /* ImageSlideshow/SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5F8A78D12A0D405700EF44E3 /* ImageSlideshow/SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 				5F8A78A62A0CD1DB00EF44E3 /* FirebaseAnalytics in Frameworks */,
 				5F8A78AC2A0CD1DB00EF44E3 /* FirebaseStorage in Frameworks */,
 				5F8A78A82A0CD1DB00EF44E3 /* FirebaseAuth in Frameworks */,
+				5F8A78D22A0D405700EF44E3 /* ImageSlideshow/SDWebImage in Frameworks */,
 				5F8A78AA2A0CD1DB00EF44E3 /* FirebaseFirestore in Frameworks */,
 				5F8A78C92A0D365000EF44E3 /* SDWebImage in Frameworks */,
 			);
@@ -224,6 +226,7 @@
 				5F8A78A92A0CD1DB00EF44E3 /* FirebaseFirestore */,
 				5F8A78AB2A0CD1DB00EF44E3 /* FirebaseStorage */,
 				5F8A78C82A0D365000EF44E3 /* SDWebImage */,
+				5F8A78D12A0D405700EF44E3 /* ImageSlideshow/SDWebImage */,
 			);
 			productName = ProjectSnapchatClone;
 			productReference = 5F8A786F2A0CCE7400EF44E3 /* ProjectSnapchatClone.app */;
@@ -300,6 +303,7 @@
 			packageReferences = (
 				5F8A78A42A0CD1DB00EF44E3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				5F8A78C72A0D365000EF44E3 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				5F8A78D02A0D405700EF44E3 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
 			);
 			productRefGroup = 5F8A78702A0CCE7400EF44E3 /* Products */;
 			projectDirPath = "";
@@ -717,6 +721,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		5F8A78D02A0D405700EF44E3 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zvonicek/ImageSlideshow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -744,6 +756,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5F8A78C72A0D365000EF44E3 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		5F8A78D12A0D405700EF44E3 /* ImageSlideshow/SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F8A78D02A0D405700EF44E3 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow/SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
