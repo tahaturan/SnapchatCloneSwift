@@ -8,7 +8,11 @@
 import UIKit
 
 class LogInVC: UIViewController {
-
+    
+    @IBOutlet weak var userNameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +20,8 @@ class LogInVC: UIViewController {
     }
     
 
-
+    @IBAction func logInButtonClicked(_ sender: Any) {
+    }
+    
 
 }

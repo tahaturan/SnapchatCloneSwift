@@ -106,6 +106,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="signInButtonClicked:" destination="42Y-Au-lig" eventType="touchUpInside" id="nwg-h6-kAI"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T9H-GP-ohd">
                                 <rect key="frame" x="30" y="407" width="333" height="34"/>
@@ -136,6 +139,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f99-YA-qzb"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="kk8-Fy-wUr" id="bKy-9G-mGw"/>
+                        <outlet property="passwordTextField" destination="yMq-V6-ldz" id="I20-0m-C7p"/>
+                        <outlet property="userNameTextField" destination="T9H-GP-ohd" id="Pkz-9r-5OV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fUe-oq-Prt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,6 +186,9 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="logInButtonClicked:" destination="LBk-35-lGL" eventType="touchUpInside" id="MqZ-Wr-acs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MU4-gS-mhc"/>
@@ -197,6 +208,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6vh-P9-EvQ"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="EoM-DB-sBV" id="lcy-m7-4Fu"/>
+                        <outlet property="userNameTextField" destination="Y3T-mX-6eW" id="L3y-ib-sEG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BfS-PB-UKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
