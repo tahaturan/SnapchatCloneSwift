@@ -119,7 +119,7 @@ extension FeedVC{
                                         }
                                         
                              
-                                    }  
+                                    }
                                 }
                             }
                         }
