@@ -298,6 +298,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="Y8s-eh-RfC"/>
+                    <connections>
+                        <segue destination="xMd-4p-XGB" kind="presentation" identifier="toSginInVC" modalPresentationStyle="fullScreen" id="sZ8-th-9OO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l8q-zs-5Ue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -395,7 +398,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xMd-4p-XGB" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xkh-EG-I4a">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
