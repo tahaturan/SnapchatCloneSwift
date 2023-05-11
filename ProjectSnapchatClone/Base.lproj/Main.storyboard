@@ -170,7 +170,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName Or Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y3T-mX-6eW">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y3T-mX-6eW">
                                 <rect key="frame" x="30" y="319" width="333" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="gS3-0v-7pW"/>

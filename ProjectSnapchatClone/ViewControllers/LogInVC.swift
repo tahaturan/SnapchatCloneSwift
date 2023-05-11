@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LogInVC: UIViewController {
     
@@ -16,12 +17,36 @@ class LogInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
     @IBAction func logInButtonClicked(_ sender: Any) {
+        if userNameTextField.text != nil && passwordTextField.text != nil {
+            
+            signInUser()
+
+        }else{
+            ApplicationConstants.makeAlert(title: "Error", message: "Email/Password ?", viewController: self)
+        }
     }
     
 
+}
+
+
+//MARK: SignIn user Firebase
+extension LogInVC{
+    
+    func signInUser()  {
+        Auth.auth().signIn(withEmail: self.userNameTextField.text!, password: passwordTextField.text!) { result, error in
+            if error != nil {
+                ApplicationConstants.makeAlert(title: "Error", message: error?.localizedDescription ?? "ERROR!", viewController: self)
+            }else{
+                self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                
+            }
+        }
+    }
+    
 }
