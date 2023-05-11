@@ -17,7 +17,7 @@ class FeedVC: UIViewController {
     
     var snapArray = [SnapModel]()
     var choosenSnap : SnapModel?
-    var timeLeft : Int?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +83,7 @@ extension FeedVC:UITableViewDelegate , UITableViewDataSource{
         if segue.identifier == "toSnapVC"{
             let destinationVC = segue.destination as! SnapVC
             destinationVC.selectedSnap = self.choosenSnap
-            destinationVC.selectedTime = self.timeLeft
+            
         }
     }
     
@@ -111,15 +111,15 @@ extension FeedVC{
                                         if difference >= 24 {
                                             //Delete
                                             self.fireStoreDatabase.collection("Snaps").document(documentId).delete()
+                                        }else{
+                                            //TIMELEFT -> SnapVC
+                                           
+                                            let snap = SnapModel(userName: userName, imageArray: imageUrlArray, date: date.dateValue() , timeDifferenge: 24 - difference)
+                                            self.snapArray.append(snap)
                                         }
                                         
-                                        //TIMELEFT -> SnapVC
-                                        self.timeLeft = 24 - difference
-                                    }
-                                    
-                                    let snap = SnapModel(userName: userName, imageArray: imageUrlArray, date: date.dateValue())
-                                    self.snapArray.append(snap)
-                                    
+                             
+                                    }  
                                 }
                             }
                         }

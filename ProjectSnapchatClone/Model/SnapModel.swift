@@ -11,4 +11,5 @@ struct SnapModel {
     var userName:String
     var imageArray:[String]
     var date : Date
+    var timeDifferenge :Int
 }

@@ -13,12 +13,12 @@ class SnapVC: UIViewController {
 
     @IBOutlet weak var timeLabel: UILabel!
     var selectedSnap : SnapModel?
-    var selectedTime : Int?
+    
     var inputArray = [SDWebImageSource]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        timeLabel.text = "Time Left: \(selectedTime ?? 0)"
+        timeLabel.text = "Time Left: \(selectedSnap?.timeDifferenge ?? 0)"
         
         
         if let snap  = selectedSnap {
