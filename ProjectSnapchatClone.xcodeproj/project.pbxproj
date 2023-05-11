@@ -28,6 +28,7 @@
 		5F8A78B72A0CE80500EF44E3 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A78B62A0CE80500EF44E3 /* SettingsVC.swift */; };
 		5F8A78BA2A0CF0EF00EF44E3 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A78B92A0CF0EF00EF44E3 /* SnapVC.swift */; };
 		5F8A78BD2A0D074700EF44E3 /* ApplicationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A78BC2A0D074700EF44E3 /* ApplicationConstants.swift */; };
+		5F8A78C22A0D20FD00EF44E3 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A78C12A0D20FD00EF44E3 /* UserSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		5F8A78B62A0CE80500EF44E3 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		5F8A78B92A0CF0EF00EF44E3 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
 		5F8A78BC2A0D074700EF44E3 /* ApplicationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConstants.swift; sourceTree = "<group>"; };
+		5F8A78C12A0D20FD00EF44E3 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		5F8A78712A0CCE7400EF44E3 /* ProjectSnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
+				5F8A78C02A0D20D000EF44E3 /* Model */,
 				5F8A78BB2A0D070D00EF44E3 /* Constants */,
 				5F8A78B82A0CE84D00EF44E3 /* Delegates */,
 				5F8A78AD2A0CE00F00EF44E3 /* ViewControllers */,
@@ -181,6 +184,14 @@
 				5F8A78BC2A0D074700EF44E3 /* ApplicationConstants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		5F8A78C02A0D20D000EF44E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F8A78C12A0D20FD00EF44E3 /* UserSingleton.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F8A78C22A0D20FD00EF44E3 /* UserSingleton.swift in Sources */,
 				5F8A78BD2A0D074700EF44E3 /* ApplicationConstants.swift in Sources */,
 				5F8A78B32A0CE7D000EF44E3 /* FeedVC.swift in Sources */,
 				5F8A78772A0CCE7400EF44E3 /* SignInVC.swift in Sources */,
